@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AppViewController : UICollectionViewController
-
+@property (nonatomic, strong) NSMutableArray* appInfos;
 @end

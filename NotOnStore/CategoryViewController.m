@@ -7,10 +7,11 @@
 //
 
 #import "CategoryViewController.h"
+#import "AppViewController.h"
 #import <PPRevealSideViewController.h>
 
 @interface CategoryViewController ()
-
+@property (nonatomic, strong) NSMutableDictionary* category;
 @end
 
 @implementation CategoryViewController
@@ -23,6 +24,17 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.category = [@{
+                       @"色情露骨": @[
+                                    @{@"image":@"girl1", @"name":@"美眉搖一搖"},
+                                    @{@"image":@"girl2", @"name":@"Izumi' Sexy 3D Anime Compass Free"},
+                                    @{@"image":@"girl3", @"name":@"摸摸幻想曲01"},
+                                    @{@"image":@"girl4", @"name":@"萌姬初體驗02"},
+                                    @{@"image":@"girl5", @"name":@"ちょっとHな桃姫物語～鬼退治？桃から生まれた巨乳の美女桃姫～"},
+                                  ],
+                      
+                      } mutableCopy];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +46,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AppViewController"];
+    UITableViewCell *cell = (UITableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    UIViewController* vc = nil;
+    if (indexPath.section == 0 && indexPath.row == 1) {
+        vc = [self.storyboard instantiateViewControllerWithIdentifier:@"UploadViewController"];
+    } else {
+        
+        vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AppViewController"];
+        NSString* text = cell.textLabel.text;
+        
+        if (text.length > 0 && self.category[text] != nil) {
+            UINavigationController* navi = (UINavigationController*)vc;
+            AppViewController* app = (AppViewController*)navi.viewControllers.firstObject;
+            app.appInfos = self.category[text];
+            app.title = text;
+        }
+    }
+    
 //    UINavigationController* navi = (UINavigationController*)self.revealSideViewController.rootViewController;
     [self.revealSideViewController replaceCentralViewControllerWithNewController:vc animated:YES animationDirection:PPRevealSideDirectionLeft completion:^{
     }];

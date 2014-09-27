@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -62,6 +63,105 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rwy-ke-Ssf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="836"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eHa-0y-Z0i">
+            <objects>
+                <navigationController storyboardIdentifier="UploadViewController" id="efK-M3-brn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ken-ta-dU8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8V5-Fv-cdZ" kind="relationship" relationship="rootViewController" id="Bj3-9k-AJc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtR-8l-eJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1325" y="1629"/>
+        </scene>
+        <!--Upload Viewcontroller-->
+        <scene sceneID="Ja6-BO-TcV">
+            <objects>
+                <viewController id="8V5-Fv-cdZ" customClass="UploadViewcontroller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T2n-Qg-Pc4"/>
+                        <viewControllerLayoutGuide type="bottom" id="GPX-rY-HqY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vzd-yP-sUj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名稱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rku-eK-W34">
+                                <rect key="frame" x="282" y="88" width="274" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="NSC-md-cW0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="dy2-PZ-6tV">
+                                <rect key="frame" x="16" y="88" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="CFp-lL-FXi"/>
+                                    <constraint firstAttribute="width" constant="240" id="Y3h-UG-6M7"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vag-UG-4Ki">
+                                <rect key="frame" x="282" y="130" width="282" height="198"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ed-XF-Hr6" userLabel="Container">
+                                <rect key="frame" x="0.0" y="358" width="600" height="242"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqK-WV-80f">
+                                        <rect key="frame" x="265" y="106" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3dZ-sy-k7j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="上傳">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="AqK-WV-80f" secondAttribute="centerY" id="YGT-PY-9DL"/>
+                                    <constraint firstAttribute="centerX" secondItem="AqK-WV-80f" secondAttribute="centerX" id="bvZ-Zq-saJ"/>
+                                    <constraint firstAttribute="height" constant="242" id="jIU-EI-KQD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Ed-XF-Hr6" secondAttribute="trailing" constant="-16" id="2ns-FS-zwh"/>
+                            <constraint firstItem="Vag-UG-4Ki" firstAttribute="leading" secondItem="rku-eK-W34" secondAttribute="leading" id="3H6-fc-e19"/>
+                            <constraint firstItem="dy2-PZ-6tV" firstAttribute="top" secondItem="rku-eK-W34" secondAttribute="top" id="CG5-Qc-XGl"/>
+                            <constraint firstItem="dy2-PZ-6tV" firstAttribute="top" secondItem="T2n-Qg-Pc4" secondAttribute="bottom" constant="24" id="Eu9-9T-l3q"/>
+                            <constraint firstItem="Vag-UG-4Ki" firstAttribute="bottom" secondItem="dy2-PZ-6tV" secondAttribute="bottom" id="Got-r2-KO3"/>
+                            <constraint firstItem="dy2-PZ-6tV" firstAttribute="leading" secondItem="vzd-yP-sUj" secondAttribute="leadingMargin" id="HPe-MJ-NoE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vag-UG-4Ki" secondAttribute="trailing" constant="20" id="VCz-wb-oEe"/>
+                            <constraint firstItem="0Ed-XF-Hr6" firstAttribute="leading" secondItem="vzd-yP-sUj" secondAttribute="leadingMargin" constant="-16" id="g2C-ej-s0J"/>
+                            <constraint firstItem="Vag-UG-4Ki" firstAttribute="top" secondItem="rku-eK-W34" secondAttribute="bottom" constant="12" id="htW-y0-zSg"/>
+                            <constraint firstItem="GPX-rY-HqY" firstAttribute="top" secondItem="0Ed-XF-Hr6" secondAttribute="bottom" id="wAd-ge-eVQ"/>
+                            <constraint firstItem="Vag-UG-4Ki" firstAttribute="leading" secondItem="dy2-PZ-6tV" secondAttribute="trailing" constant="26" id="zYw-rl-ply"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="r7i-ka-2r5">
+                        <barButtonItem key="leftBarButtonItem" image="ButtonMenu.png" id="XPE-iZ-jD5">
+                            <connections>
+                                <action selector="openLeftDeck:" destination="8V5-Fv-cdZ" id="haq-PQ-03D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpY-x5-BNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-711" y="1629"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="fdH-Jp-KGz">
@@ -273,7 +373,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMP-Cu-7ev" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-639" y="2211"/>
+            <point key="canvasLocation" x="-703" y="2309"/>
         </scene>
         <!--App View Controller-->
         <scene sceneID="Fr6-5k-nYQ">
@@ -287,7 +387,7 @@
                             <size key="itemSize" width="114" height="130"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="mQI-hB-71f" customClass="AppCell">
@@ -345,5 +445,6 @@
     <resources>
         <image name="ButtonMenu.png" width="25" height="25"/>
         <image name="Cat.png" width="202" height="204"/>
+        <image name="default-placeholder.png" width="1500" height="1500"/>
     </resources>
 </document>

@@ -29,6 +29,20 @@
 		F98001FB19D669E100E18B5E /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98001F919D669E100E18B5E /* CategoryViewController.m */; };
 		F98001FE19D6717100E18B5E /* AppCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F98001FD19D6717100E18B5E /* AppCell.m */; };
 		F98001FF19D6717100E18B5E /* AppCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F98001FD19D6717100E18B5E /* AppCell.m */; };
+		F980020119D6831E00E18B5E /* default-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020019D6831E00E18B5E /* default-placeholder.png */; };
+		F980020219D6831E00E18B5E /* default-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020019D6831E00E18B5E /* default-placeholder.png */; };
+		F980020519D6844F00E18B5E /* UploadViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = F980020419D6844F00E18B5E /* UploadViewcontroller.m */; };
+		F980020619D6844F00E18B5E /* UploadViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = F980020419D6844F00E18B5E /* UploadViewcontroller.m */; };
+		F980020B19D688D400E18B5E /* girl4.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020719D688D400E18B5E /* girl4.png */; };
+		F980020C19D688D400E18B5E /* girl4.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020719D688D400E18B5E /* girl4.png */; };
+		F980020D19D688D400E18B5E /* girl1.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020819D688D400E18B5E /* girl1.png */; };
+		F980020E19D688D400E18B5E /* girl1.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020819D688D400E18B5E /* girl1.png */; };
+		F980020F19D688D400E18B5E /* girl3.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020919D688D400E18B5E /* girl3.png */; };
+		F980021019D688D400E18B5E /* girl3.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020919D688D400E18B5E /* girl3.png */; };
+		F980021119D688D400E18B5E /* girl2.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020A19D688D400E18B5E /* girl2.png */; };
+		F980021219D688D400E18B5E /* girl2.png in Resources */ = {isa = PBXBuildFile; fileRef = F980020A19D688D400E18B5E /* girl2.png */; };
+		F980021419D68D5300E18B5E /* girl5.png in Resources */ = {isa = PBXBuildFile; fileRef = F980021319D68D5300E18B5E /* girl5.png */; };
+		F980021519D68D5300E18B5E /* girl5.png in Resources */ = {isa = PBXBuildFile; fileRef = F980021319D68D5300E18B5E /* girl5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +82,14 @@
 		F98001F919D669E100E18B5E /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		F98001FC19D6717100E18B5E /* AppCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCell.h; sourceTree = "<group>"; };
 		F98001FD19D6717100E18B5E /* AppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCell.m; sourceTree = "<group>"; };
+		F980020019D6831E00E18B5E /* default-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-placeholder.png"; sourceTree = "<group>"; };
+		F980020319D6844F00E18B5E /* UploadViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewcontroller.h; sourceTree = "<group>"; };
+		F980020419D6844F00E18B5E /* UploadViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewcontroller.m; sourceTree = "<group>"; };
+		F980020719D688D400E18B5E /* girl4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl4.png; sourceTree = "<group>"; };
+		F980020819D688D400E18B5E /* girl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl1.png; sourceTree = "<group>"; };
+		F980020919D688D400E18B5E /* girl3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl3.png; sourceTree = "<group>"; };
+		F980020A19D688D400E18B5E /* girl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl2.png; sourceTree = "<group>"; };
+		F980021319D68D5300E18B5E /* girl5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl5.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +142,12 @@
 		F98001BE19D641D100E18B5E /* NotOnStore */ = {
 			isa = PBXGroup;
 			children = (
+				F980020719D688D400E18B5E /* girl4.png */,
+				F980021319D68D5300E18B5E /* girl5.png */,
+				F980020819D688D400E18B5E /* girl1.png */,
+				F980020919D688D400E18B5E /* girl3.png */,
+				F980020A19D688D400E18B5E /* girl2.png */,
+				F980020019D6831E00E18B5E /* default-placeholder.png */,
 				F98001F119D6647500E18B5E /* Cat.png */,
 				F98001EA19D6523D00E18B5E /* ButtonMenu.png */,
 				F98001EB19D6523D00E18B5E /* ButtonMenu@2x.png */,
@@ -139,6 +167,8 @@
 				F98001F919D669E100E18B5E /* CategoryViewController.m */,
 				F98001FC19D6717100E18B5E /* AppCell.h */,
 				F98001FD19D6717100E18B5E /* AppCell.m */,
+				F980020319D6844F00E18B5E /* UploadViewcontroller.h */,
+				F980020419D6844F00E18B5E /* UploadViewcontroller.m */,
 			);
 			path = NotOnStore;
 			sourceTree = "<group>";
@@ -251,11 +281,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F980020119D6831E00E18B5E /* default-placeholder.png in Resources */,
+				F980020F19D688D400E18B5E /* girl3.png in Resources */,
+				F980020D19D688D400E18B5E /* girl1.png in Resources */,
 				F98001EE19D6523D00E18B5E /* ButtonMenu@2x.png in Resources */,
+				F980021119D688D400E18B5E /* girl2.png in Resources */,
 				F98001CB19D641D100E18B5E /* Main.storyboard in Resources */,
 				F98001F219D6647500E18B5E /* Cat.png in Resources */,
+				F980021419D68D5300E18B5E /* girl5.png in Resources */,
 				F98001D019D641D100E18B5E /* LaunchScreen.xib in Resources */,
 				F98001EC19D6523D00E18B5E /* ButtonMenu.png in Resources */,
+				F980020B19D688D400E18B5E /* girl4.png in Resources */,
 				F98001CD19D641D100E18B5E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F98001ED19D6523D00E18B5E /* ButtonMenu.png in Resources */,
+				F980021519D68D5300E18B5E /* girl5.png in Resources */,
+				F980020E19D688D400E18B5E /* girl1.png in Resources */,
 				F98001EF19D6523D00E18B5E /* ButtonMenu@2x.png in Resources */,
 				F98001F319D6647500E18B5E /* Cat.png in Resources */,
+				F980021219D688D400E18B5E /* girl2.png in Resources */,
+				F980020219D6831E00E18B5E /* default-placeholder.png in Resources */,
+				F980021019D688D400E18B5E /* girl3.png in Resources */,
+				F980020C19D688D400E18B5E /* girl4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +357,7 @@
 				F98001FE19D6717100E18B5E /* AppCell.m in Sources */,
 				F98001E719D645EB00E18B5E /* DeckViewController.m in Sources */,
 				F98001C519D641D100E18B5E /* AppDelegate.m in Sources */,
+				F980020519D6844F00E18B5E /* UploadViewcontroller.m in Sources */,
 				F98001FA19D669E100E18B5E /* CategoryViewController.m in Sources */,
 				F98001C219D641D100E18B5E /* main.m in Sources */,
 			);
@@ -325,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F98001FB19D669E100E18B5E /* CategoryViewController.m in Sources */,
+				F980020619D6844F00E18B5E /* UploadViewcontroller.m in Sources */,
 				F98001FF19D6717100E18B5E /* AppCell.m in Sources */,
 				F98001DC19D641D100E18B5E /* NotOnStoreTests.m in Sources */,
 				F98001F719D667EF00E18B5E /* AppViewController.m in Sources */,

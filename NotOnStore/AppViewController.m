@@ -58,16 +58,20 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 20;
+    return self.appInfos.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
+    NSDictionary* info = self.appInfos[indexPath.row];
     // Configure the cell
     if ([cell isKindOfClass:[AppCell class]]) {
         AppCell* appCell = (AppCell*)cell;
-        appCell.label.text = @"hello";
+        
+        NSString* imageName = info[@"image"];
+        appCell.imageView.image = [UIImage imageNamed:imageName];
+        appCell.label.text = info[@"name"];
     }
     return cell;
 }
