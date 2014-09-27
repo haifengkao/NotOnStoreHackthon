@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -47,10 +46,43 @@
                         <viewControllerLayoutGuide type="top" id="47d-Dt-847"/>
                         <viewControllerLayoutGuide type="bottom" id="rVX-4m-ZtC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="x35-HC-Dhd">
+                    <view key="view" contentMode="scaleToFill" id="zTZ-OC-uLb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99215686270000003" green="0.38431372549999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2014 Cocoa Spice. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lCC-3b-J3m">
+                                <rect key="frame" x="20" y="559" width="560" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下架王" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hM-LT-Fzo">
+                                <rect key="frame" x="210" y="116" width="180" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Uxs-vU-LOw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rejected by Google" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ds6-87-d38">
+                                <rect key="frame" x="20" y="191" width="560" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="0hM-LT-Fzo" secondAttribute="centerX" id="77b-14-0xD"/>
+                            <constraint firstItem="0hM-LT-Fzo" firstAttribute="top" secondItem="zTZ-OC-uLb" secondAttribute="top" constant="116" id="gmo-EA-n4H"/>
+                            <constraint firstAttribute="centerX" secondItem="lCC-3b-J3m" secondAttribute="centerX" id="khL-YR-5CD"/>
+                            <constraint firstAttribute="centerX" secondItem="Ds6-87-d38" secondAttribute="centerX" id="oQu-BM-sb5"/>
+                            <constraint firstAttribute="bottom" secondItem="lCC-3b-J3m" secondAttribute="bottom" constant="20" id="p1J-em-d4i"/>
+                            <constraint firstItem="Ds6-87-d38" firstAttribute="top" secondItem="0hM-LT-Fzo" secondAttribute="bottom" constant="-15" id="s0w-UF-v2G"/>
+                            <constraint firstItem="lCC-3b-J3m" firstAttribute="leading" secondItem="zTZ-OC-uLb" secondAttribute="leading" constant="20" symbolic="YES" id="sLu-aS-0Fu"/>
+                            <constraint firstItem="Ds6-87-d38" firstAttribute="leading" secondItem="zTZ-OC-uLb" secondAttribute="leading" constant="20" symbolic="YES" id="slU-Pd-i13"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y1c-SV-iLN">
                         <barButtonItem key="leftBarButtonItem" image="ButtonMenu.png" id="6rY-dG-fRb">
@@ -107,10 +139,10 @@
                                     <constraint firstAttribute="width" constant="240" id="Y3h-UG-6M7"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vag-UG-4Ki">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="應用描述" translatesAutoresizingMaskIntoConstraints="NO" id="Vag-UG-4Ki">
                                 <rect key="frame" x="282" y="130" width="282" height="198"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
