@@ -22,6 +22,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Title-->
+        <scene sceneID="q01-v6-ox7">
+            <objects>
+                <viewController storyboardIdentifier="FileBrowser" id="bVA-9p-Itp" customClass="FileBrowser" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d8a-E8-ba1"/>
+                        <viewControllerLayoutGuide type="bottom" id="0VG-NS-CAf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xYh-Ro-hZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jw6-z5-1WE">
+                                <rect key="frame" x="0.0" y="5" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="1n3-ZC-wyw"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="s44-J3-08j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxc-Vt-crx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-945" y="999"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="D3G-c2-Vbt">
             <objects>
@@ -158,6 +185,9 @@
                                         <state key="normal" title="上傳">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="uploadButton:" destination="8V5-Fv-cdZ" eventType="touchUpInside" id="54k-av-8LB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

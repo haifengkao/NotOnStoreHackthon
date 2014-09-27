@@ -1,20 +1,30 @@
 //
-//  UploadViewcontroller.m
+//  FileBrowser.m
 //  NotOnStore
 //
 //  Created by Lono on 9/27/14.
 //  Copyright (c) 2014 cocoaspice. All rights reserved.
 //
 
-#import "UploadViewcontroller.h"
-#import "FBFilesTableViewController.h"
+#import "FileBrowser.h"
 
-@interface UploadViewcontroller ()
+@interface FileBrowser ()
 
 @end
 
-@implementation UploadViewcontroller
+@implementation FileBrowser
 
+- (id)initWithCoder:(NSCoder*)coder
+{
+    NSString *startingPath = @"/Users/Lono/tmp/APK";
+    self = [self initWithPath:startingPath];
+    return self;
+}
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -25,13 +35,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)uploadButton:(id)sender
+- (IBAction)closeButton:(id)sender
 {
-    UIViewController* navController = [self.storyboard instantiateViewControllerWithIdentifier:@"FileBrowser"];
-    
-    [self.navigationController pushViewController:navController animated:YES];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
-
 
 /*
 #pragma mark - Navigation

@@ -40,6 +40,14 @@
 		F963C1B719D6A219000D6E33 /* hello5.png in Resources */ = {isa = PBXBuildFile; fileRef = F963C1A619D6A219000D6E33 /* hello5.png */; };
 		F963C1B819D6A219000D6E33 /* hello3.png in Resources */ = {isa = PBXBuildFile; fileRef = F963C1A719D6A219000D6E33 /* hello3.png */; };
 		F963C1B919D6A219000D6E33 /* hello3.png in Resources */ = {isa = PBXBuildFile; fileRef = F963C1A719D6A219000D6E33 /* hello3.png */; };
+		F963C1BC19D6A78E000D6E33 /* DBChooser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F963C1BA19D6A78E000D6E33 /* DBChooser.bundle */; };
+		F963C1BD19D6A78E000D6E33 /* DBChooser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F963C1BA19D6A78E000D6E33 /* DBChooser.bundle */; };
+		F963C1BE19D6A78E000D6E33 /* DBChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F963C1BB19D6A78E000D6E33 /* DBChooser.framework */; };
+		F963C1BF19D6A78E000D6E33 /* DBChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F963C1BB19D6A78E000D6E33 /* DBChooser.framework */; };
+		F963C1C219D6AE06000D6E33 /* FBFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F963C1C119D6AE06000D6E33 /* FBFilesTableViewController.m */; };
+		F963C1C319D6AE06000D6E33 /* FBFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F963C1C119D6AE06000D6E33 /* FBFilesTableViewController.m */; };
+		F963C1C619D6B0E9000D6E33 /* FileBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F963C1C519D6B0E9000D6E33 /* FileBrowser.m */; };
+		F963C1C719D6B0E9000D6E33 /* FileBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F963C1C519D6B0E9000D6E33 /* FileBrowser.m */; };
 		F98001C219D641D100E18B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F98001C119D641D100E18B5E /* main.m */; };
 		F98001C519D641D100E18B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F98001C419D641D100E18B5E /* AppDelegate.m */; };
 		F98001C819D641D100E18B5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98001C719D641D100E18B5E /* ViewController.m */; };
@@ -114,6 +122,12 @@
 		F963C1A519D6A219000D6E33 /* hello1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hello1.png; sourceTree = "<group>"; };
 		F963C1A619D6A219000D6E33 /* hello5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hello5.png; sourceTree = "<group>"; };
 		F963C1A719D6A219000D6E33 /* hello3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hello3.png; sourceTree = "<group>"; };
+		F963C1BA19D6A78E000D6E33 /* DBChooser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DBChooser.bundle; sourceTree = "<group>"; };
+		F963C1BB19D6A78E000D6E33 /* DBChooser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DBChooser.framework; sourceTree = "<group>"; };
+		F963C1C019D6AE06000D6E33 /* FBFilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFilesTableViewController.h; sourceTree = "<group>"; };
+		F963C1C119D6AE06000D6E33 /* FBFilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFilesTableViewController.m; sourceTree = "<group>"; };
+		F963C1C419D6B0E9000D6E33 /* FileBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileBrowser.h; sourceTree = "<group>"; };
+		F963C1C519D6B0E9000D6E33 /* FileBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileBrowser.m; sourceTree = "<group>"; };
 		F98001BC19D641D100E18B5E /* NotOnStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotOnStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98001C019D641D100E18B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F98001C119D641D100E18B5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -157,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F963C1BE19D6A78E000D6E33 /* DBChooser.framework in Frameworks */,
 				E2E7C69EE4304DE8BE87D5B0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F963C1BF19D6A78E000D6E33 /* DBChooser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +218,8 @@
 		F98001BE19D641D100E18B5E /* NotOnStore */ = {
 			isa = PBXGroup;
 			children = (
+				F963C1BA19D6A78E000D6E33 /* DBChooser.bundle */,
+				F963C1BB19D6A78E000D6E33 /* DBChooser.framework */,
 				F963C19F19D6A219000D6E33 /* hello4.png */,
 				F963C1A019D6A219000D6E33 /* hello7.png */,
 				F963C1A119D6A219000D6E33 /* hello2.png */,
@@ -244,11 +262,15 @@
 				F98001F419D667EF00E18B5E /* AppViewController.h */,
 				F98001F519D667EF00E18B5E /* AppViewController.m */,
 				F98001F819D669E100E18B5E /* CategoryViewController.h */,
+				F963C1C019D6AE06000D6E33 /* FBFilesTableViewController.h */,
+				F963C1C119D6AE06000D6E33 /* FBFilesTableViewController.m */,
 				F98001F919D669E100E18B5E /* CategoryViewController.m */,
 				F98001FC19D6717100E18B5E /* AppCell.h */,
 				F98001FD19D6717100E18B5E /* AppCell.m */,
 				F980020319D6844F00E18B5E /* UploadViewcontroller.h */,
 				F980020419D6844F00E18B5E /* UploadViewcontroller.m */,
+				F963C1C419D6B0E9000D6E33 /* FileBrowser.h */,
+				F963C1C519D6B0E9000D6E33 /* FileBrowser.m */,
 			);
 			path = NotOnStore;
 			sourceTree = "<group>";
@@ -387,6 +409,7 @@
 				F963C1B619D6A219000D6E33 /* hello5.png in Resources */,
 				F963C19519D69D71000D6E33 /* Violent5.png in Resources */,
 				F98001EC19D6523D00E18B5E /* ButtonMenu.png in Resources */,
+				F963C1BC19D6A78E000D6E33 /* DBChooser.bundle in Resources */,
 				F963C1B019D6A219000D6E33 /* hello9.png in Resources */,
 				F963C19719D69D71000D6E33 /* Violent7.png in Resources */,
 				F963C19319D69D71000D6E33 /* Violent4.png in Resources */,
@@ -429,6 +452,7 @@
 				F980020C19D688D400E18B5E /* girl4.png in Resources */,
 				F963C1B719D6A219000D6E33 /* hello5.png in Resources */,
 				F963C1A919D6A219000D6E33 /* hello4.png in Resources */,
+				F963C1BD19D6A78E000D6E33 /* DBChooser.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,8 +500,10 @@
 				F98001C819D641D100E18B5E /* ViewController.m in Sources */,
 				F98001FE19D6717100E18B5E /* AppCell.m in Sources */,
 				F98001E719D645EB00E18B5E /* DeckViewController.m in Sources */,
+				F963C1C619D6B0E9000D6E33 /* FileBrowser.m in Sources */,
 				F98001C519D641D100E18B5E /* AppDelegate.m in Sources */,
 				F980020519D6844F00E18B5E /* UploadViewcontroller.m in Sources */,
+				F963C1C219D6AE06000D6E33 /* FBFilesTableViewController.m in Sources */,
 				F98001FA19D669E100E18B5E /* CategoryViewController.m in Sources */,
 				F98001C219D641D100E18B5E /* main.m in Sources */,
 			);
@@ -491,6 +517,8 @@
 				F980020619D6844F00E18B5E /* UploadViewcontroller.m in Sources */,
 				F98001FF19D6717100E18B5E /* AppCell.m in Sources */,
 				F98001DC19D641D100E18B5E /* NotOnStoreTests.m in Sources */,
+				F963C1C719D6B0E9000D6E33 /* FileBrowser.m in Sources */,
+				F963C1C319D6AE06000D6E33 /* FBFilesTableViewController.m in Sources */,
 				F98001F719D667EF00E18B5E /* AppViewController.m in Sources */,
 				F98001E819D645EB00E18B5E /* DeckViewController.m in Sources */,
 			);
@@ -611,6 +639,10 @@
 			baseConfigurationReference = 5BD0D10E9E334D0BAAAFE372 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotOnStore",
+				);
 				INFOPLIST_FILE = NotOnStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -623,6 +655,10 @@
 			baseConfigurationReference = 5BD0D10E9E334D0BAAAFE372 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotOnStore",
+				);
 				INFOPLIST_FILE = NotOnStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -638,6 +674,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/NotOnStore",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -658,6 +695,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/NotOnStore",
 				);
 				INFOPLIST_FILE = NotOnStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
